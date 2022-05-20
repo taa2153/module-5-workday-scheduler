@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    cursor: none;
   }
   
   textarea{
@@ -68,6 +69,29 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  .cursor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate3d(-50%,-50%, 0);
+    top: 0;
+    left: 0;
+    background-color: rgb(130, 130, 130);
+  }
+
+  .cursor-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(201, 201, 201);
+    position: absolute;
+    transform: translate3d(-50%,-50%, 0);
+    top: 0;
+    left: 0;
+    transition: 0.1s ease-out;
   }
 
   /*css

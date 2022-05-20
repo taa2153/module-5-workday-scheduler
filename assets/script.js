@@ -69,4 +69,20 @@ $(document).ready(function () {
     timeTracker();
 })
 
+"use strict";
+(function(){
+    var cursor = document.querySelector('.cursor');
+    var cursorcircle = document.querySelector('.cursor-circle');
+    var links =document.querySelectorAll ('a');
+
+    var editCursor = function editCursos(event){
+        cursor.style.left = event.clientX + 'px';
+        cursor.style.top = event.clientY + 'px';
+        cursorcircle.style.left = event.clientX + 'px';
+        cursorcircle.style.top = event.clientY + 'px';
+    }
+
+    window.addEventListener('mousemove',editCursor);
+})();
+
 /*javascript*/
